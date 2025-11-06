@@ -1,1 +1,40 @@
-import 'package:flutter/material.dart';\nimport 'screens/home_screen.dart';\nimport 'screens/chat_screen.dart';\nimport 'screens/pay_screen.dart';\nimport 'screens/earn_screen.dart';\nimport 'screens/video_screen.dart';\nimport 'screens/market_screen.dart';\n\nvoid main() {\n  runApp(const NexoraApp());\n}\n\nclass NexoraApp extends StatelessWidget {\n  const NexoraApp({super.key});\n\n  @override\n  Widget build(BuildContext context) {\n    return MaterialApp(\n      title: 'Nexora',\n      debugShowCheckedModeBanner: false,\n      theme: ThemeData(\n        colorScheme: ColorScheme.fromSeed(\n          seedColor: const Color(0xFF6C63FF),\n          brightness: Brightness.light,\n        ),\n        useMaterial3: true,\n        fontFamily: 'Poppins',\n      ),\n      darkTheme: ThemeData(\n        colorScheme: ColorScheme.fromSeed(\n          seedColor: const Color(0xFF6C63FF),\n          brightness: Brightness.dark,\n        ),\n        useMaterial3: true,\n        fontFamily: 'Poppins',\n      ),\n      home: const HomeScreen(),\n    );\n  }\n}
+import 'package:flutter/material.dart';
+import 'screens/home_screen.dart';
+import 'screens/chat_screen.dart';
+import 'screens/pay_screen.dart';
+import 'screens/earn_screen.dart';
+import 'screens/video_screen.dart';
+import 'screens/market_screen.dart';
+
+void main() {
+  runApp(const NexoraApp());
+}
+
+class NexoraApp extends StatelessWidget {
+  const NexoraApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Nexora',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF6C63FF),
+          brightness: Brightness.light,
+        ),
+        useMaterial3: true,
+        fontFamily: 'Poppins',
+      ),
+      darkTheme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF6C63FF),
+          brightness: Brightness.dark,
+        ),
+        useMaterial3: true,
+        fontFamily: 'Poppins',
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
